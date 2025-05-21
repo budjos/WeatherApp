@@ -1,14 +1,65 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  background: #eef2f3;
+  background: linear-gradient(to top, #c9d6ff, #e2e2e2); /* Nebeski gradient */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2em;
 }
+
+/* Weather App Container */
 .weather-container {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   padding: 2em;
-  border-radius: 12px;
+  border-radius: 16px;
   max-width: 400px;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.weather-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 80%;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+/* Button */
+button {
+  padding: 0.7em 1.2em;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+/* Result Area */
+#weatherResult {
+  margin-top: 1.5em;
+  font-size: 1.1em;
+}
+
+#weatherResult img {
+  margin-top: 0.5em;
+  width: 64px;
+  height: 64px;
 }
