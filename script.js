@@ -1,6 +1,6 @@
 async function getWeather() {
   const city = document.getElementById("cityInput").value;
-  const apiKey = "77d7f2fa656e4d3ea2c115714252105"; // Zamijeni s pravim API ključem ako želiš
+  const apiKey = "77d7f2fa656e4d3ea2c115714252105"; // Zamijena s pravim API ključem
   const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`);
   const data = await response.json();
   if (data.error) {
